@@ -1,0 +1,9 @@
+.title {
+  background-color: #eff4f9;
+  padding-block: 12px;
+}
+
+.title h1 {
+  text-align: center;
+  color: #445566;
+}

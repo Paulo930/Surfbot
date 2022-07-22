@@ -1,0 +1,21 @@
+.comment-background {
+  height: 480px;
+  background-image: url('../img/foto-quote.jpg');
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment h2 {
+  text-align: center;
+  max-width: 650px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.comment p {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}

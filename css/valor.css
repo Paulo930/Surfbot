@@ -1,0 +1,127 @@
+.valor-background {
+  background-color: #eff4f9;
+  padding-block: 4rem;
+}
+
+.valor {
+  display: grid;
+}
+
+.valor h2 {
+  text-align: center;
+  color: #445566;
+  font-weight: normal;
+  width: max-content;
+  position: relative;
+  justify-self: center;
+}
+
+.valor h2::before {
+  content: '';
+  display: block;
+  background-image: url('../img/ondas.svg');
+  width: 174px;
+  height: 68px;
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.valor-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-block: 1.8rem;
+  gap: 1.8rem;
+}
+
+.valor-list-item {
+  padding: 70px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: grid;
+  box-shadow: 0px 5px 5px rgba(187, 204, 221, 0.4),
+    0px 10px 10px rgba(187, 204, 221, 0.4);
+}
+
+.valor-list-item h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #445566;
+  margin-bottom: 30px;
+  justify-self: center;
+  position: relative;
+  width: max-content;
+}
+
+.valor-list-item h3::before {
+  content: '';
+  background-image: url('../img/surfbot.svg');
+  width: 22px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: -90px;
+  left: 30%;
+}
+
+.valor-list-item:nth-child(2) h3::before {
+  width: 44px;
+  height: 37px;
+}
+
+.valor-list-item:nth-child(3) h3::before {
+  width: 65px;
+  height: 37px;
+}
+
+.valor-item {
+  padding-block: 1.5rem;
+  display: grid;
+  gap: 15px;
+  border-top: 2px solid #eff4f9;
+  border-bottom: 2px solid #eff4f9;
+}
+
+.valor-item li {
+  color: #445566;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.valor-item li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #ff3726;
+}
+
+.valor-preco {
+  margin-top: 15px;
+  margin-bottom: 2rem;
+  color: #1188ee;
+}
+
+.valor-list-item .button {
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: #445566;
+  border-radius: 5px;
+  gap: 58px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.valor > p {
+  text-align: center;
+  color: #445566;
+}
+
+.valor > p span {
+  color: #ff3726;
+}

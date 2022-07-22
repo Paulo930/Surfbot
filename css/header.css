@@ -1,0 +1,50 @@
+.horario {
+  background-color: #1188ee;
+  padding-block: 0.25rem;
+}
+
+.horario p {
+  color: #fff;
+}
+
+.navbar-background {
+  background-color: #17222d;
+  padding-block: 0.75rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-links li + li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 0.9rem;
+}
+
+.navbar-links li:last-child a::after {
+  content: '';
+  background-color: #ee2211;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+}

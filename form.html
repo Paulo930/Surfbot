@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Surfibot</title>
+  </head>
+  <body>
+    <header class="navbar-background">
+      <nav class="container navbar">
+        <a class="navbar-logo" href="./index.html">
+          <img src="./img/surfbot-logo.svg" alt="Surfibot" />
+        </a>
+        <ul class="navbar-links">
+          <li class="font-2-m"><a href="#">Praia</a></li>
+          <li class="font-2-m"><a href="#">Aulas</a></li>
+          <li class="font-2-m"><a href="#">Contato</a></li>
+          <li class="font-2-m"><a href="./form.html">Matricule-se</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="title">
+      <h1 class="font-1-xxl">Matricule-se</h1>
+    </main>
+
+    <section class="form container">
+      <div class="form-form">
+        <div class="form-base">
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Nome</label>
+            <input type="text" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Email</label>
+            <input type="text" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">CPF</label>
+            <input type="text" placeholder="111.111.111-01" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Endereço</label>
+            <input type="text" placeholder="Rua, Número e Bairro" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Estado</label>
+            <input type="text" placeholder="Selecione o Estado" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">CEP</label>
+            <input type="text" placeholder="22.222-000" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Cidade</label>
+            <input type="text" placeholder="Selecione a Cidade" />
+          </div>
+        </div>
+        <div class="form-cartao">
+          <h2 class="font-2-mb">Forma de Pagamento</h2>
+          <div class="check">
+            <input type="radio" name="forma" id="credito" />
+            <label for="credito" class="font-2-mb">Cartão de Crédito </label>
+            <input type="radio" name="forma" id="boleto" />
+            <label for="boleto" class="font-2-mb">Boleto Bancário </label>
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Nome no Cartão</label>
+            <input type="text" placeholder="Nome impresso no cartão" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Data de Expiração</label>
+            <input type="text" placeholder="Mês/Ano" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Número de Cartão</label>
+            <input type="text" placeholder="5555 5555 5555 5555" />
+          </div>
+          <div class="form-controller">
+            <label for="" class="font-2-mb">Código de Segurança</label>
+            <input type="text" placeholder="XXX" />
+          </div>
+        </div>
+        <p class="font-2-m">Seu cartão será debitado em R$ 49,00</p>
+        <button class="button" class="font-2-mb">Realizar Matrícula</button>
+        <p class="font-2-xs">
+          <img src="./img/cadeado.svg" alt="Cadeado" /> Informações seguras e
+          criptografadas
+        </p>
+      </div>
+      <div class="form-plano">
+        <h2 class="font-2-mb">Escolha o Plano</h2>
+        <div class="check">
+          <input type="radio" name="plano" id="infantil" />
+          <label for="infantil" class="font-2-mb">Infantil</label>
+          <input type="radio" name="plano" id="adulto" />
+          <label for="adulto" class="font-2-mb">Adulto</label>
+          <input type="radio" name="plano" id="profissional" />
+          <label for="profissional" class="font-2-mb">Profissional</label>
+        </div>
+        <div class="valor-list-item">
+          <h3 class="font-2-mb">Infantil</h3>
+          <ul class="valor-item">
+            <li class="font-2-xs">Público entre 5 e 15 anos</li>
+            <li class="font-2-xs">Equipamentos fornecidos</li>
+            <li class="font-2-xs">Horários de Sex. à Sab.</li>
+            <li class="font-2-xs">2 horas seguidas de aula</li>
+          </ul>
+          <p class="valor-preco font-2-xs">R$ 49,00 / Aula</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-background">
+      <div class="footer container">
+        <p class="font-2-m">Surfnet 2017 - Alguns direitos reseervados.</p>
+        <img src="./img/surfbot-icon.png" alt="Surfbot" />
+      </div>
+    </footer>
+  </body>
+</html>

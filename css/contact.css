@@ -1,0 +1,120 @@
+.contact {
+  padding-block: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 1.8rem;
+  background-image: url('../img/bg-icones.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.contact h2 {
+  grid-column: 1 / -1;
+  color: #445566;
+  text-align: center;
+}
+
+.form-controller {
+  display: grid;
+  gap: 3px;
+}
+
+.form-controller + .form-controller {
+  margin-top: 15px;
+}
+
+.form-controller label {
+  color: #445566;
+}
+
+.form-controller input,
+.form-controller textarea {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  background-color: #eff4f9;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+}
+
+.form-controller input::placeholder {
+  color: #bbccdd;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+}
+
+.form-controller textarea {
+  resize: none;
+}
+
+.contact-form .button {
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: #445566;
+  border-radius: 5px;
+  gap: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.desc {
+  height: 100%;
+  width: 2px;
+  background-color: #eff4f9;
+  justify-self: center;
+}
+
+.contact-local {
+  max-width: 270px;
+}
+
+.contact-local + .contact-local {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 2px solid #eff4f9;
+}
+
+.contact-local:last-child h3::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #16c70b;
+  position: absolute;
+  left: -18px;
+  top: 8px;
+}
+
+.contact-local ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-local h3 {
+  position: relative;
+}
+
+.contact-local h3,
+.contact-local li,
+.contact-local a {
+  color: #445566;
+}
+
+.contact-local h3,
+.contact-local a {
+  font-weight: 700;
+}
+
+.contact-local a {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
